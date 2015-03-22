@@ -113,7 +113,7 @@ public void calcularIMC(View view) {
         if(!resultado.equals("")){
             //Criando Intent para chamada de nova activity
             Intent res = new Intent(getBaseContext(),Result_activity.class);
-
+            // Criando bundle
             Bundle parametros = new Bundle();
 
             //atribuindo resultado como parametro para outra activity
