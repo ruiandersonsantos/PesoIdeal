@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world"
+        android:paddingTop="20dp"
+        android:textColor="#ff3626cc"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text="@string/lbl_peso"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_peso"/>
+
+    <TextView android:text="@string/lbl_altura"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_altura"/>
+
+    <TextView android:text="@string/lbl_idade"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/hint_idade"/>
+
+    <TextView android:text="@string/lbl_sexo"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rg_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <RadioButton android:text="Masculino"
+            android:checked="true"
+            android:id="@+id/rb_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+         </RadioButton>
+
+        <RadioButton android:text="Feminino"
+            android:id="@+id/rb_feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:onClick="calcularIMC"
+        android:id="@+id/btn_calcular" />
+
+</LinearLayout>
